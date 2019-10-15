@@ -1,0 +1,90 @@
+.header-class{
+    width: 100%;
+    background: url("/img/top-image.jpg") rgba(93, 64, 86, 0.9);
+    background-blend-mode: multiply;
+}
+
+.headertitle-class{
+    color: #ffffff;
+    font-family: 微軟正黑體, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.headerdescription-class{
+    color: #ffffff;
+    font-family: 微軟正黑體, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.headbg-purple-class{
+    background-color: #5d4056!important;
+}
+
+.brand-class{
+    color: #5d4056;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 微軟正黑體, sans-serif;
+    font-size: 30px;
+}
+
+.description-class{
+    font-family: 微軟正黑體, sans-serif;
+    font-size: 20px;
+}
+
+/* Only for snippet */
+.double-nav .breadcrumb-dn {
+    color: #fff;
+}
+
+.nav-link{
+    font-family: 微軟正黑體, sans-serif;
+    font-weight: bold;
+}
+
+.fab {
+    padding-right: 3px;
+    padding-left: 3px;
+    font-family: 'Font Awesome 5 Brands';
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-facebook-f:before {
+    content: "\f39e";
+}
+
+.fa-twitter-f:before {
+    content: "\f099";
+}
+
+.fa-instagram-f:before {
+    content: "\f16d";
+}
+
+.fa-sign-in-alt-f:before {
+    content: "\f2f6";
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a.waves-effect, a.waves-light {
+    display: inline-block;
+}
