@@ -74,6 +74,10 @@
     content: "\f2f6";
 }
 
+.fa-shopping-cart:before {
+    content: "\f07a";
+}
+
 .waves-effect {
     position: relative;
     cursor: pointer;

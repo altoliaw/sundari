@@ -16,5 +16,13 @@
 });*/
 
 Route::get('/', function () {
-    return view('sundari');
+    return view('pages/home',['title'=>'- Home']);
+});
+
+Route::get('vip', function () {
+    return view('pages/vip',['title'=>'- VIP']);
+});
+
+Route::get('about', function () {
+    return view('pages/about',['title'=>'- About me']);
 });
