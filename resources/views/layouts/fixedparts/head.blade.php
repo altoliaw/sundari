@@ -47,11 +47,5 @@
       
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron header-class">
-      <div class="container">
-        <h2 class="headertitle-class">Nature & Lohas Brand philosophy Professional Qualia</h2>
-        <p class="headerdescription-class">Nature and Beauty</p>
-        <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
-      </div>
-  </div>   
+  @include('layouts.fixedparts.carousel')   
   </header>

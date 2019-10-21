@@ -1,6 +1,6 @@
 .header-class{
     width: 100%;
-    background: url("/img/top-image.jpg") rgba(93, 64, 86, 0.9);
+    /*background: url("/img/top-image.jpg") rgba(93, 64, 86, 0.9);*/
     background-blend-mode: multiply;
 }
 
@@ -34,6 +34,7 @@
 .description-class{
     font-family: 微軟正黑體, sans-serif;
     font-size: 20px;
+    height: 100px;
 }
 
 /* Only for snippet */
