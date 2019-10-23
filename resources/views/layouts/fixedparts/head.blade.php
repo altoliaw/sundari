@@ -13,22 +13,22 @@
           <a class="nav-link" href="about">關於我們</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">品牌故事</a>
+          <a class="nav-link" href="history">品牌故事</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">服務項目</a>
+            <a class="nav-link" href="service">服務項目</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">聯絡我們</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">VIP會員</a>
+            <a class="nav-link" href="vip">VIP會員</a>
         </li>
       </ul>
     </div>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link waves-effect waves-light"><i class="fas fa-sign-in-alt fa-lg"></i></a>
+        <a class="nav-link waves-effect waves-light" alt="Login" href="login"><i class="fas fa-sign-in-alt fa-lg"></i></a>
       </li>
       <li class="nav-item">
           <a class="nav-link waves-effect waves-light"><i class="fas fa-shopping-cart fa-lg"></i></a>

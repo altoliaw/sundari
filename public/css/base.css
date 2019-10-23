@@ -1,6 +1,6 @@
 .header-class{
     width: 100%;
-    /*background: url("/img/top-image.jpg") rgba(93, 64, 86, 0.9);*/
+    background: url("/img/top-image.jpg") rgba(93, 64, 86, 0.9);
     background-blend-mode: multiply;
 }
 

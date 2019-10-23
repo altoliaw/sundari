@@ -19,10 +19,23 @@ Route::get('/', function () {
     return view('pages/home',['title'=>'- Home']);
 });
 
+
+Route::get('about', function () {
+    return view('pages/about',['title'=>'- About me']);
+});
+
+Route::get('service', function () {
+    return view('pages/service',['title'=>'- Service']);
+});
+
+Route::get('history', function () {
+    return view('pages/history',['title'=>'- History']);
+});
+
 Route::get('vip', function () {
     return view('pages/vip',['title'=>'- VIP']);
 });
 
-Route::get('about', function () {
-    return view('pages/about',['title'=>'- About me']);
+Route::get('login', function () {
+    return view('pages/login',['title'=>'- Login']);
 });

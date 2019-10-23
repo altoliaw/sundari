@@ -4,7 +4,7 @@
 <div class="container">
 <div class="row">
     <div class="col-md-12">
-      <h3 class="brand-class">關於我們</h3>
+      <h3 class="brand-class">品牌故事</h3>
       <hr>
       <p class="description-class">三生盟國際事業有限公司在臺灣美容產業已具近20年的經驗，
                                   於公元2000年整合轉型為自然療法之身、心、靈SPA業者，專門提供臺灣知名SPA連鎖店，
