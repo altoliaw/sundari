@@ -32,6 +32,14 @@ Route::get('history', function () {
     return view('pages/history',['title'=>'- History']);
 });
 
+Route::get('contact', function () {
+    return view('pages/contact',['title'=>'- Contact']);
+});
+
+Route::get('joinmember', function () {
+    return view('pages/joinmember',['title'=>'- Joinmember']);
+});
+
 Route::get('vip', function () {
     return view('pages/vip',['title'=>'- VIP']);
 });
