@@ -1,4 +1,4 @@
-  <header>
+<header>
     <!--Nav top-->
   <nav class="navbar navbar-expand-sm headbg-purple-class navbar-dark text-right">
     <!-- Brand -->
@@ -19,7 +19,7 @@
             <a class="nav-link" href="service">服務項目</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">聯絡我們</a>
+            <a class="nav-link" href="contact">聯絡我們</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="vip">VIP會員</a>
