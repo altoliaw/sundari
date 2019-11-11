@@ -1,4 +1,6 @@
 <?php
+
+use App\Member;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,15 +26,33 @@ Route::get('service', function () {
 Route::get('history', function () {
     return view('pages/history',['title'=>'- History']);
 });
+
 Route::get('contact', function () {
     return view('pages/contact',['title'=>'- Contact']);
 });
+
 Route::get('joinmember', function () {
     return view('pages/joinmember',['title'=>'- Joinmember']);
 });
-Route::get('vip', function () {
-    return view('pages/vip',['title'=>'- VIP']);
+
+Route::get('member', function () {
+    return view('pages/member',['title'=>'- member']);
 });
 Route::get('login', function () {
     return view('pages/login',['title'=>'- Login']);
+});
+
+Route::get('test', function () {
+    return view('pages/test',['title'=>'- test'],['member'=>'']);
+});
+
+/*Route::get('test', ['middleware' => 'auth.basic', function () {
+    return view('pages/test',['title'=>'- test'],['member'=>'']);
+}]);*/
+
+Route::get('sendvermail','WarningController@send');
+
+Route::get('m', function(){
+    $member = Member::where('account','test')->value('password');
+    return view('pages/test',['title'=>'- test'],['member'=>$member]);
 });
