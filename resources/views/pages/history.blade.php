@@ -9,6 +9,7 @@
       <p class="description-class">三生盟國際事業有限公司在臺灣美容產業已具近20年的經驗，
                                   於公元2000年整合轉型為自然療法之身、心、靈SPA業者，專門提供臺灣知名SPA連鎖店，
                                   自然療法系列產品、教育課程、專業諮詢…等業務範圍。市場遍及全亞洲並以專業、天然、人文享譽業界。</p>
+                                  <p><a class="btn btn-secondary" href="test" role="button">測試連結 &raquo;</a></p>
     </div>
 </div>
 </div>

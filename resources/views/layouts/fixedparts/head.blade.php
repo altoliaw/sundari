@@ -22,7 +22,7 @@
             <a class="nav-link" href="contact">聯絡我們</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="vip">VIP會員</a>
+            <a class="nav-link" href="member">會員專區</a>
         </li>
       </ul>
     </div>
