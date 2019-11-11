@@ -1,6 +1,6 @@
 <?php
 
-use App\Member;
+use App\User2;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -59,7 +59,11 @@ Route::get('test', function () {
 
 Route::get('sendvermail','WarningController@send');
 
+
 Route::get('m', function(){
-    $member = Member::where('account','test')->value('password');
+    $member = User2::where('id','1')->value('name');
     return view('pages/test',['title'=>'- test'],['member'=>$member]);
-});
+})->middleware('auth');
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
