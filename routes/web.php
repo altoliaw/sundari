@@ -17,36 +17,71 @@ use App\User2;
 });*/
 
 Route::get('/', function () {
-    return view('pages/home',['title'=>'- Home']);
+    $t = '';
+    if(Auth::check())
+    {
+        $t = Auth::user()->value('name').'您好';
+    }
+    return view('pages/home',['title'=>'- Home'],['name'=>$t]);
 });
 
 
 Route::get('about', function () {
-    return view('pages/about',['title'=>'- About me']);
+    $t = '';
+    if(Auth::check())
+    {
+        $t = Auth::user()->value('name').'您好';
+    }
+    return view('pages/about',['title'=>'- About me'],['name'=>$t]);
 });
 
 Route::get('service', function () {
-    return view('pages/service',['title'=>'- Service']);
+    $t = '';
+    if(Auth::check())
+    {
+        $t = Auth::user()->value('name').'您好';
+    }
+    return view('pages/service',['title'=>'- Service'],['name'=>$t]);
 });
 
 Route::get('history', function () {
-    return view('pages/history',['title'=>'- History']);
+    $t = '';
+    if(Auth::check())
+    {
+        $t = Auth::user()->value('name').'您好';
+    }
+    return view('pages/history',['title'=>'- History'],['name'=>$t]);
 });
 
 Route::get('contact', function () {
-    return view('pages/contact',['title'=>'- Contact']);
+    $t = '';
+    if(Auth::check())
+    {
+        $t = Auth::user()->value('name').'您好';
+    }
+    return view('pages/contact',['title'=>'- Contact'],['name'=>$t]);
 });
 
 Route::get('joinmember', function () {
-    return view('pages/joinmember',['title'=>'- Joinmember']);
+    $t = '';
+    if(Auth::check())
+    {
+        $t = Auth::user()->value('name').'您好';
+    }
+    return view('pages/joinmember',['title'=>'- Joinmember'],['name'=>$t]);
 });
 
 Route::get('member', function () {
-    return view('pages/member',['title'=>'- member']);
+    $t = '';
+    if(Auth::check())
+    {
+        $t = Auth::user()->value('name').'您好';
+    }
+    return view('pages/member',['title'=>'- member'],['name'=>$t]);
 });
 
 Route::get('login', function () {
-    return view('pages/login',['title'=>'- Login']);
+    return view('pages/login',['title'=>'- Login'],['name'=>$t]);
 });
 
 Route::get('test', function () {
@@ -57,6 +92,7 @@ Route::get('test', function () {
     return view('pages/test',['title'=>'- test'],['member'=>'']);
 }]);*/
 
+
 Route::get('sendvermail','WarningController@send');
 
 
@@ -64,6 +100,7 @@ Route::get('m', function(){
     $member = User2::where('id','1')->value('name');
     return view('pages/test',['title'=>'- test'],['member'=>$member]);
 })->middleware('auth');
+
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

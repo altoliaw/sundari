@@ -24,6 +24,9 @@
         <li class="nav-item">
             <a class="nav-link" href="member">會員專區</a>
         </li>
+        <li class="nav-item">
+          <h1> {{$name}} </h1>
+      </li>
       </ul>
     </div>
     <ul class="navbar-nav">
