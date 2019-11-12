@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
       <div class="col-md-4">
-        <h3 class="brand-class">{{ $name }}天然樂活</h3>
+        <h3 class="brand-class">天然樂活</h3>
         <hr>
         <img src="img/brand01.jpg" />
         <p class="description-class">符合天然無毒，友善環境，絕不用動物做實驗等基本要素。</p>

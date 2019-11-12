@@ -16,11 +16,10 @@ use App\User2;
     return view('welcome');
 });*/
 
-Route::get('/', function () {
-    $t = '';
+Route::get('/', function ($t = '') {
     if(Auth::check())
     {
-        $t = Auth::user()->value('name').'您好';
+        $t = Auth::user()['name'].'您好';
     }
     return view('pages/home',['title'=>'- Home'],['name'=>$t]);
 });
@@ -30,7 +29,7 @@ Route::get('about', function () {
     $t = '';
     if(Auth::check())
     {
-        $t = Auth::user()->value('name').'您好';
+        $t = Auth::user()['name'].'您好';
     }
     return view('pages/about',['title'=>'- About me'],['name'=>$t]);
 });
@@ -39,7 +38,7 @@ Route::get('service', function () {
     $t = '';
     if(Auth::check())
     {
-        $t = Auth::user()->value('name').'您好';
+        $t = Auth::user()['name'].'您好';
     }
     return view('pages/service',['title'=>'- Service'],['name'=>$t]);
 });
@@ -48,7 +47,7 @@ Route::get('history', function () {
     $t = '';
     if(Auth::check())
     {
-        $t = Auth::user()->value('name').'您好';
+        $t = Auth::user()['name'].'您好';
     }
     return view('pages/history',['title'=>'- History'],['name'=>$t]);
 });
@@ -57,7 +56,7 @@ Route::get('contact', function () {
     $t = '';
     if(Auth::check())
     {
-        $t = Auth::user()->value('name').'您好';
+        $t = Auth::user()['name'].'您好';
     }
     return view('pages/contact',['title'=>'- Contact'],['name'=>$t]);
 });
@@ -66,7 +65,7 @@ Route::get('joinmember', function () {
     $t = '';
     if(Auth::check())
     {
-        $t = Auth::user()->value('name').'您好';
+        $t = Auth::user()['name'].'您好';
     }
     return view('pages/joinmember',['title'=>'- Joinmember'],['name'=>$t]);
 });
@@ -75,7 +74,7 @@ Route::get('member', function () {
     $t = '';
     if(Auth::check())
     {
-        $t = Auth::user()->value('name').'您好';
+        $t = Auth::user()['name'].'您好';
     }
     return view('pages/member',['title'=>'- member'],['name'=>$t]);
 });
@@ -97,7 +96,8 @@ Route::get('sendvermail','WarningController@send');
 
 
 Route::get('m', function(){
-    $member = User2::where('id','1')->value('name');
+    //$member = User2::where('id',Auth::user()->value('id'))->value('name');
+    $member = Auth::user()['name'];
     return view('pages/test',['title'=>'- test'],['member'=>$member]);
 })->middleware('auth');
 
