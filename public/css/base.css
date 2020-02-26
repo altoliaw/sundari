@@ -1,95 +1,139 @@
-.header-class{
-    width: 100%;
-    background: url("/img/top-image.jpg") rgba(93, 64, 86, 0.9);
-    background-blend-mode: multiply;
+.main-content{
+	width: 50%;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.4);
+	margin: 5em auto;
+	display: flex;
+	font-family: 'cwTeXKai', serif;
+	
+}
+.company__info{
+	background-color: #00C300;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+}
+.fa-android{
+	font-size:3em;
+}
+@media screen and (max-width: 640px) {
+	.main-content{width: 90%;}
+	.company__info{
+		display: none;
+	}
+	.login_form{
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+}
+@media screen and (min-width: 642px) and (max-width:800px){
+	.main-content{width: 70%;}
+}
+.row > h2{
+	color:#00C300;
+}
+.login_form{
+	background-color: #fff;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+form{
+	padding: 0 2em;
+}
+.form__input{
+	width: 100%;
+	border:0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid #aaa;
+	padding: 1em .5em .5em;
+	padding-left: 2em;
+	outline:none;
+	margin:1.5em auto;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border-bottom-color: #00C300;
+	box-shadow: 0 0 5px rgba(0,80,80,.4); 
+	border-radius: 4px;
+}
+.linebtn{
+	transition: all .5s ease;
+	width: 100%;
+	border-radius: 10px;
+	color:#FFFFFF;
+	font-weight: 600;
+	background-color: #00C300;
+	border: 1px solid #00C300;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.linebtn:hover, .linebtn:focus{
+	background-color: #00E000;
+	color:#FFFFFF;
 }
 
-.headertitle-class{
-    color: #ffffff;
-    font-family: 微軟正黑體, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
+.fa-line-f:before {
+    content: "\f3c0";
 }
 
-.headerdescription-class{
-    color: #ffffff;
-    font-family: 微軟正黑體, sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+.fa-canadian-maple-leaf-f:before {
+    content: "\f785";
 }
 
-.headbg-purple-class{
-    background-color: #5d4056!important;
+.fa-address-book-f:before {
+	content: "\f2b9";
 }
 
-.brand-class{
-    color: #5d4056;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: 微軟正黑體, sans-serif;
-    font-size: 30px;
+.fa-address-card-f:before {
+	content: "\f2bb";
 }
 
-.description-class{
-    font-family: 微軟正黑體, sans-serif;
-    font-size: 20px;
-    height: 100px;
+.fa-eye-f:before {
+	content: "\f06e";
 }
 
-/* Only for snippet */
-.double-nav .breadcrumb-dn {
-    color: #fff;
+.fa-eye-slash-f:before {
+	content: "\f070";
 }
 
-.nav-link{
-    font-family: 微軟正黑體, sans-serif;
-    font-weight: bold;
+.fa-archive-f:before {
+	content: "\f187";
 }
 
-.fab {
-    padding-right: 3px;
-    padding-left: 3px;
-    font-family: 'Font Awesome 5 Brands';
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
+.fa-file-invoice-dollar-f:before {
+	content: "\f571";
 }
 
-.fa-facebook-f:before {
-    content: "\f39e";
+.fa-file-contract-f:before {
+	content: "\f56c";
 }
 
-.fa-twitter-f:before {
-    content: "\f099";
+.fa-plus-f:before {
+	content: "\f067";
 }
 
-.fa-instagram-f:before {
-    content: "\f16d";
+.fa-industry-f:before {
+	content: "\f275";
 }
 
-.fa-sign-in-alt-f:before {
-    content: "\f2f6";
+.fill { 
+    min-height: 100%;
+    height: 100%;
 }
 
-.fa-shopping-cart:before {
-    content: "\f07a";
+.detailcontent{
+	font-weight: 600;
 }
 
-.waves-effect {
-    position: relative;
+td.details-control {
+    background: url('/css/details_open.png') no-repeat center center;
     cursor: pointer;
-    overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
 }
-
-a.waves-effect, a.waves-light {
-    display: inline-block;
+tr.shown td.details-control {
+    background: url('/css/details_close.png') no-repeat center center;
 }
